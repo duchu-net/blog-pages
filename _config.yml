@@ -1,2 +1,6 @@
 theme: minima
-author: Patryk Androsiuk
+author: 
+  name: Patryk Androsiuk
+  email: patrykandrosiuk@gmail.com
+minima:
+  skin: solarized-dark
