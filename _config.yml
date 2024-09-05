@@ -1,7 +1,9 @@
-theme: minima
-author: 
-  name: Patryk Androsiuk
-  email: patrykandrosiuk@gmail.com
+author: Patryk Androsiuk
+
+# theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
 minima:
   skin: solarized-dark
   social_links:
