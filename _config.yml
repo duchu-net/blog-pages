@@ -4,3 +4,5 @@ author:
   email: patrykandrosiuk@gmail.com
 minima:
   skin: solarized-dark
+  social_links:
+    - { platform: github,  user_url: "https://github.com/duchu-net/blog-pages" }
