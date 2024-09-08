@@ -2,6 +2,7 @@
 layout: post
 title: "Frontend Developers bad habits"
 categories: javascript
+tags: javascript typescript
 author: Patryk Androsiuk
 date: 2024-09-06
 ---
