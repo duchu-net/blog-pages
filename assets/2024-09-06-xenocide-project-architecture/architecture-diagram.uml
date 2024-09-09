@@ -2,7 +2,7 @@
 
 !theme bluegray
 
-title [Xenocide.online Architecture]
+title "Xenocide.online Architecture"
 
 cloud "Internet" as web
 package "Front End" as fe {

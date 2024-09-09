@@ -8,7 +8,7 @@ date: 2024-09-06
 
 Hello World!
 
-<img src="/blog-pages/assets/2024-09-06-xenocide-project-architecture/architecture-diagram.png" alt="Xenocide project architecture diagram"/>
+<img src="https://raw.githubusercontent.com/duchu-net/blog-pages/main/assets/2024-09-06-xenocide-project-architecture/architecture-diagram.png" alt="Xenocide project architecture diagram"/>
 
 
 ```uml
