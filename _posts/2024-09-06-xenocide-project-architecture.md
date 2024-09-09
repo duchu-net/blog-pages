@@ -14,7 +14,8 @@ Hello World!
 ```uml
 @startuml
 
-skin rose
+!theme bluegray
+skinparam backgroundColor transparent
 
 title Xenocide.online Architecture
 
