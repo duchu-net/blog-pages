@@ -15,7 +15,9 @@ Short introduction to post about bad habits of FE Devs...
 const arr = ["a", "b", "c"];
 
 // standard
-arr.reduce((acc, cur) => ({ ...acc, [cur]: true }), {}); // <- creates new object 1+n times
+arr.reduce((acc, cur) => ({ 
+  ...acc, [cur]: true 
+}), {}); // <- creates new object 1+n times
 
 // optimal
 arr.reduce((acc, cur) => {
@@ -31,7 +33,8 @@ It's fine to just spreed and create new object for each item in short arrays, li
 ```js
 // standard
 const arr = [{ id: "a" }, { id: "b" }, { id: "c" }];
-const getItem = (id) => arr.find((it) => it.id === id); // complexity O(n)
+const getItem = (id) => arr
+  .find((it) => it.id === id); // complexity O(n)
 
 // optimal
 const hashMap = {
@@ -47,11 +50,16 @@ Example use with filters in react:
 ```jsx
 // standard
 const filtered = arr.filter((it) => it.some === 'a');
-const render = filtered.map((it) => (<ItemComponent key={it.id} id={it.id} some={it.some} >));
+const render = filtered.map((it) => (
+  <ItemComponent key={it.id} id={it.id} some={it.some} >
+));
 
 // optimal
-const filtered = Object.keys(hashMap).filter((key) => getItem(key).some === 'a'); // eg. with useMemo
-const render = filtered.map((id) => (<ItemComponent key={id} id={id} >)); // utilize getItem(id) inside ItemComponent
+const filtered = Object.keys(hashMap)
+  .filter((key) => getItem(key).some === 'a'); // eg. with useMemo
+const render = filtered.map((id) => (
+  <ItemComponent key={id} id={id} >
+)); // utilize getItem(id) inside ItemComponent
 ```
 When we use react context, we can store all data there, and our list component should be only care what to display, not about whole item type.
 
